@@ -16,10 +16,10 @@ function handleSubmit (e) {
           e.preventDefault();
           console.log('Submitted input:', input);
           getUserIpAddress(input);
-          console.log(input);
   }
 
 function handleChange(e){
+  setInput(e.target.value);
 }
 
 function getUserIpAddress(IP_ADDRESS){
