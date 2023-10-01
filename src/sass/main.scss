@@ -1,0 +1,31 @@
+$color: #fff;
+$color-textPrimary: #000;
+$color-Secondarytext: #808080;
+
+$bg-large: 56.24rem; //900px 
+$bg-small: 37.5rem; //600px
+
+
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 99.9%;
+    height: 99vh;
+    margin: 0;
+
+    @media only screen and (max-width: $bg-small) {
+        height: 110vh;
+    }
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+
+

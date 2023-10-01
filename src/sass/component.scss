@@ -1,0 +1,115 @@
+.header{
+    z-index: 0;
+
+    &_header-text{
+        position: absolute;
+        top: 15%;
+        font-size: 4rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 200;
+        color: white;
+
+        @media only screen and (max-width: $bg-small) {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+    }
+
+    &_searchBar{
+        width: 40%;
+        height: 5rem;
+        position: absolute;
+        top: 45%;
+        // border: 1px solid red;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media only screen and (max-width: $bg-small) {
+            width: 80%;
+            height: 7rem;
+            top: 35%;
+        }
+
+        &_input{
+            width: 90%;
+            height: 5rem;
+            font-size: 2rem;
+            padding-left: 1rem;
+            border: none;
+            border-radius: 1rem 0rem 0rem 1rem;
+        }
+        &_input:focus{
+            outline: none;
+        }
+
+        &_submit{
+            width: 9%;
+            height: 5rem;
+            border: none;
+            color: blue;
+            border-radius: 0rem 1rem 1rem 0rem;
+        }
+        &_submit:hover{
+            background-color: blue;
+            color: white;
+        }
+    }
+}
+
+.map{
+  width: 65%;
+  height: 10rem;
+  background: white;
+  border: none;
+  border-radius: 2rem;
+  position: absolute;
+  top: -5rem;
+  left: 17%;
+  z-index: 10;
+  box-shadow: 0rem 0rem 0.5rem gray;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  @media only screen and (max-width: $bg-small) {
+    width: 80%;
+    height: 30rem;
+    top: -14rem;
+    left: 10%;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+  &_details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: blue;
+
+    &_header{
+        font-size: 2.3rem;
+        font-weight: bold;
+
+        @media only screen and (max-width: $bg-large) {
+            font-size: 1.5rem;
+        }
+        
+    }
+    &_body{
+        font-size: 2rem;
+        @media only screen and (max-width: $bg-large) {
+            font-size: 1rem;
+        }
+    }
+  }
+
+}
+.leaflet-pane{
+    z-index: 0;
+}
